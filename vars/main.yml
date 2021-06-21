@@ -43,6 +43,20 @@ fw_services:
     filter_INPUT:
       - dport: 80
       - dport: 443
+  web_moc:
+    filter_INPUT:
+      - srcip: 129.10.5.0/24
+        dport: 443
+      - srcip: 192.12.185.0/24
+        dport: 443
+      - srcip: 128.31.28.0/24
+        dport: 443
+      - srcip: 129.10.5.0/24
+        dport: 80
+      - srcip: 192.12.185.0/24
+        dport: 80
+      - srcip: 128.31.28.0/24
+        dport: 80
   domain:
     filter_INPUT:
       - proto: tcp
