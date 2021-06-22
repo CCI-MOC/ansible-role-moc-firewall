@@ -17,8 +17,11 @@ fw_services:
   all_internal_nets:
     filter_INPUT:
       - srcip: 10.0.0.0/8
+        proto: all
       - srcip: 172.16.0.0/12
+        proto: all
       - srcip: 192.168.0.0/16
+        proto: all
 
   ssh_ratelimit:
     filter_INPUT_raw:
