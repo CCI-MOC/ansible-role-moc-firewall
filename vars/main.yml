@@ -68,7 +68,8 @@ fw_services:
         dport: 53
   zabbix:
     filter_INPUT:
-      - dport: 10050
+      - srcip: 129.10.5.132
+        dport: 10050
   all_from_sso:
     filter_INPUT:
       - srcip: 128.31.28.11
